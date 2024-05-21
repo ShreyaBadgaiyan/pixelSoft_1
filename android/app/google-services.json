@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1080747551010",
+    "project_id": "pixelsoft-ede43",
+    "storage_bucket": "pixelsoft-ede43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080747551010:android:8938e6d3b3e992e4ef1d7b",
+        "android_client_info": {
+          "package_name": "com.pixelsoft.pixelsoft2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb7NhlAMnjTv2kxt71bS1nrJGznncAbC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

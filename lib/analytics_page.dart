@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 
-class ScreenFour extends StatelessWidget {
+class AnalyticsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

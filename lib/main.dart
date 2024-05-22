@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:pixelsoft2/screen_five.dart';
-import 'package:pixelsoft2/screen_four.dart';
-import 'package:pixelsoft2/screen_three.dart';
-import 'package:pixelsoft2/screen_two.dart';
+import 'package:pixelsoft2/profile_page.dart';
+import 'package:pixelsoft2/analytics_page.dart';
+import 'package:pixelsoft2/link_lo_page.dart';
+import 'package:pixelsoft2/link_genie_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
@@ -35,12 +35,12 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
 
-  static List<Widget> _widgetOptions = <Widget>[
+  static final List<Widget> _widgetOptions = <Widget>[
     BrandListPage(),
-    ScreenTwo(),
-    ScreenThree(),
-    ScreenFour(),
-    ScreenFive(),
+    LinkGeniePage(),
+    LinkLoPage(),
+    AnalyticsPage(),
+    ProfilePage(),
   ];
 
   void _onItemTapped(int index) {
@@ -104,15 +104,15 @@ class BrandListPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Brands',
+        title: const Text('Brands',
         style: TextStyle(
           fontWeight: FontWeight.bold
         ),),
       ),
       body: Column(
         children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
+          const Padding(
+            padding: EdgeInsets.all(8.0),
             child: TextField(
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
@@ -152,7 +152,7 @@ class BrandListPage extends StatelessWidget {
       trailing: Container(
           decoration: BoxDecoration(
             color: Colors.grey[300],
-            borderRadius: BorderRadius.all(Radius.circular(30))
+            borderRadius: const BorderRadius.all(Radius.circular(30))
 
           ),
           child: Padding(
@@ -166,46 +166,4 @@ class BrandListPage extends StatelessWidget {
   }
 }
 
-class LinkGeniePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text('Link Genie Page'),
-      ),
-    );
-  }
-}
 
-class LinkLoPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text('Link-Lo Page'),
-      ),
-    );
-  }
-}
-
-class AnalyticsPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text('Analytics Page'),
-      ),
-    );
-  }
-}
-
-class ProfilePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text('Profile Page'),
-      ),
-    );
-  }
-}

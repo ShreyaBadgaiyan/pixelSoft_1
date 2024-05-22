@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class ScreenThree extends StatefulWidget {
+class LinkLoPage extends StatefulWidget {
   @override
-  State<ScreenThree> createState() => _ScreenThreeState();
+  State<LinkLoPage> createState() => _LinkLoPageState();
 }
 
-class _ScreenThreeState extends State<ScreenThree> {
+class _LinkLoPageState extends State<LinkLoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

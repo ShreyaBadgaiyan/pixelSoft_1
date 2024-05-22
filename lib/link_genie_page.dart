@@ -101,48 +101,17 @@
 //   }
 // }
 //
-// class LinkLoPage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       body: Center(
-//         child: Text('Link-Lo Page'),
-//       ),
-//     );
-//   }
-// }
-//
-// class AnalyticsPage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       body: Center(
-//         child: Text('Analytics Page'),
-//       ),
-//     );
-//   }
-// }
-//
-// class ProfilePage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       body: Center(
-//         child: Text('Profile Page'),
-//       ),
-//     );
-//   }
-// }
+
 
 import 'package:flutter/material.dart';
 
 
-class ScreenTwo extends StatefulWidget {
+class LinkGeniePage extends StatefulWidget {
   @override
-  State<ScreenTwo> createState() => _ScreenTwoState();
+  State<LinkGeniePage> createState() => _LinkGeniePageState();
 }
 
-class _ScreenTwoState extends State<ScreenTwo> {
+class _LinkGeniePageState extends State<LinkGeniePage> {
   final List<Map<String, String>> _generatedLinks = [];
   final TextEditingController _linkNameController = TextEditingController();
   final TextEditingController _urlController = TextEditingController();

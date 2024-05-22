@@ -5,13 +5,13 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Profile',
+        title: const Text('Profile',
           style: TextStyle(
               fontWeight: FontWeight.bold
           ),),
         actions: [
           IconButton(
-            icon: Icon(Icons.settings),
+            icon: const Icon(Icons.settings),
             onPressed: () {
               // Navigate to settings
             },
@@ -28,7 +28,7 @@ class ProfilePage extends StatelessWidget {
               padding: const EdgeInsets.all(16.0),
               child: Column(
                 children: [
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 40,
                     backgroundColor: Colors.purple,
                     child: Icon(
@@ -37,12 +37,12 @@ class ProfilePage extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
-                  SizedBox(height: 10),
-                  Text(
+                  const SizedBox(height: 10),
+                  const Text(
                     'Rrr',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -50,24 +50,24 @@ class ProfilePage extends StatelessWidget {
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
                           foregroundColor: Colors.black, backgroundColor: Colors.white,
-                          side: BorderSide(color: Colors.grey),
+                          side: const BorderSide(color: Colors.grey),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8),
                           ),
                         ),
-                        child: Text('Connect Social'),
+                        child: const Text('Connect Social'),
                       ),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
                           foregroundColor: Colors.black, backgroundColor: Colors.white,
-                          side: BorderSide(color: Colors.grey),
+                          side: const BorderSide(color: Colors.grey),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8),
                           ),
                         ),
-                        child: Text('Copy Profile Link'),
+                        child: const Text('Copy Profile Link'),
                       ),
                     ],
                   ),
@@ -78,7 +78,7 @@ class ProfilePage extends StatelessWidget {
               padding: const EdgeInsets.all(16.0),
               child: Column(
                 children: [
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Column(
@@ -103,14 +103,14 @@ class ProfilePage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Container(
                     padding: const EdgeInsets.all(16.0),
                     decoration: BoxDecoration(
                       color: Colors.grey.shade200,
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: Column(
+                    child: const Column(
                       children: [
                         Icon(Icons.hide_image_outlined, size: 50, color: Colors.grey),
                         SizedBox(height: 10),
@@ -127,16 +127,16 @@ class ProfilePage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 70),
                   SizedBox(
-                    width: double.infinity,
+                    width: MediaQuery.of(context).size.width*0.6,
                     child: ElevatedButton(
                       onPressed: () {},
-                      child: Text('+ New Post'),
+                      child: const Text('+ New Post'),
                       style: ElevatedButton.styleFrom(
                         foregroundColor: Colors.black, backgroundColor: Colors.yellow.shade600,
-                        minimumSize: Size(double.infinity, 50),
-                        textStyle: TextStyle(fontSize: 18),
+                        minimumSize: const Size(double.infinity, 50),
+                        textStyle: const TextStyle(fontSize: 18),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8),
                         ),
